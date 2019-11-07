@@ -1,3 +1,5 @@
-Thomas,34
-Jan,57
-Bob,34
+Gold,25
+Silver,20
+Bronze,15
+Participation,10
+Lack of Motor Skills,5

@@ -11,15 +11,24 @@ player_name = input("State the name you were initially given at birth: ")
 
 #-----game configuration-----
 font_setup = ("impact", 20, "normal")
-timer = 5
+timer = 10
 counter_interval = 1000   #1000 represents 1 second
-size = 3
+if (player_name == str("boomer")):
+  size = 0.1
+else:
+  size = 3
+
 figure = "circle"
 score = 0
 speed = 0
 wn = trtl.Screen()
 
+#-----:)-----
+
+
+
 #-----initialize turtle-----
+
 target = trtl.Turtle()
 target.shape(figure)
 counter =  trtl.Turtle()
@@ -61,7 +70,7 @@ def game_over():
     target.pu()
     counter.clear()
     target.goto(9001,9001)
-    counter.goto(0,0)
+    counter.goto(80,80)
     font_setup = ("impact", 70, "normal")
     counter.write("Time's Up", font=font_setup)
     while True:
